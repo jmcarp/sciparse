@@ -1,0 +1,27 @@
+{
+    "raw": "<div class=\"References\">\n<p class=\"ReferencesCopy1\"><a name=\"B5\" id=\"B5\"></a> Davidson, T. J., Kloosterman, F., and Wilson, M. A. (2009). Hippocampal replay of extended experience. <i>Neuron</i> 63, 497\u2013507.</p>\n<p class=\"ReferencesCopy2\"><a href=\"http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&amp;Cmd=ShowDetailView&amp;TermToSearch=19709631\" target=\"_blank\">Pubmed Abstract</a> | <a href=\"http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?db=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=19709631\" target=\"_blank\">Pubmed Full Text</a> | <a href=\"http://dx.doi.org/10.1016/j.neuron.2009.07.027\" target=\"_blank\">CrossRef Full Text</a></p></div>", 
+    "pub": "frontiers", 
+    "csl": {
+        "DOI": "10.1016/j.neuron.2009.07.027", 
+        "title": "Hippocampal replay of extended experience.", 
+        "container-title-short": "Neuron", 
+        "issued": [
+            2009
+        ], 
+        "author": [
+            {
+                "given": "T. J.", 
+                "family": "Davidson"
+            }, 
+            {
+                "given": "F.", 
+                "family": "Kloosterman"
+            }, 
+            {
+                "given": "M. A.", 
+                "family": "and Wilson"
+            }
+        ], 
+        "PMID": "19709631"
+    }
+}

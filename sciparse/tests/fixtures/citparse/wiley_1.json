@@ -1,0 +1,122 @@
+{
+    "raw": {
+        "author_institution": [
+            "Lurie Family Foundations MEG Imaging Center, Department of Radiology, The Children's Hospital of Philadelphia, Pennsylvania", 
+            "Department of Psychiatry, University of Pennsylvania, Philadelphia, Pennsylvania", 
+            "Department of Psychology, Southern Methodist University, Dallas, Texas", 
+            "Department of Psychiatry, University of Pennsylvania, Philadelphia, Pennsylvania", 
+            "Department of Psychiatry, University of Pennsylvania, Philadelphia, Pennsylvania", 
+            "Philadelphia Veterans Administration Hospital, Philadelphia, Pennsylvania", 
+            "Lurie Family Foundations MEG Imaging Center, Department of Radiology, The Children's Hospital of Philadelphia, Pennsylvania", 
+            "Lurie Family Foundations MEG Imaging Center, Department of Radiology, The Children's Hospital of Philadelphia, Pennsylvania", 
+            "Department of Radiology, The Children's Hospital of Philadelphia, 34th St. and Civic Center Blvd., Wood Bldg, Suite 2115, Philadelphia, PA 19104, USA"
+        ], 
+        "publisher": [
+            "Wiley Subscription Services, Inc., A Wiley Company"
+        ], 
+        "doi": [
+            "10.1002/hbm.21406"
+        ], 
+        "abstract_html_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1002/hbm.21406/abstract"
+        ], 
+        "language": [
+            "en"
+        ], 
+        "journal_title": [
+            "Human Brain Mapping"
+        ], 
+        "title": [
+            "The fusiform response to faces: Explicit versus implicit processing of emotion"
+        ], 
+        "author": [
+            "Monroe, Justin F.", 
+            "Griffin, Mark", 
+            "Pinkham, Amy", 
+            "Loughead, James", 
+            "Gur, Ruben C.", 
+            "Roberts, Timothy P.L.", 
+            "Christopher Edgar, J."
+        ], 
+        "firstpage": [
+            "1"
+        ], 
+        "volume": [
+            "34"
+        ], 
+        "lastpage": [
+            "11"
+        ], 
+        "pdf_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1002/hbm.21406/pdf"
+        ], 
+        "keywords": [
+            "magnetoencephalography", 
+            "face processing", 
+            "emotion", 
+            "fusiform", 
+            "event\u2010related fields"
+        ], 
+        "publication_date": [
+            "2013/01/01"
+        ], 
+        "issue": [
+            "1"
+        ], 
+        "fulltext_html_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1002/hbm.21406/full"
+        ], 
+        "online_date": [
+            "2011/09/20"
+        ], 
+        "issn": [
+            "1097-0193"
+        ]
+    }, 
+    "pub": "wiley", 
+    "csl": {
+        "volume": "34", 
+        "DOI": "10.1002/hbm.21406", 
+        "container-title": "Human Brain Mapping", 
+        "title": "The fusiform response to faces: Explicit versus implicit processing of emotion", 
+        "issued": {
+            "date-parts": [
+                2013, 
+                1, 
+                1
+            ]
+        }, 
+        "author": [
+            {
+                "given": "Justin F.", 
+                "family": "Monroe"
+            }, 
+            {
+                "given": "Mark", 
+                "family": "Griffin"
+            }, 
+            {
+                "given": "Amy", 
+                "family": "Pinkham"
+            }, 
+            {
+                "given": "James", 
+                "family": "Loughead"
+            }, 
+            {
+                "given": "Ruben C.", 
+                "family": "Gur"
+            }, 
+            {
+                "given": "Timothy P. L.", 
+                "family": "Roberts"
+            }, 
+            {
+                "given": "J.", 
+                "family": "Christopher Edgar"
+            }
+        ], 
+        "issn": "1097-0193", 
+        "issue": "1"
+    }
+}

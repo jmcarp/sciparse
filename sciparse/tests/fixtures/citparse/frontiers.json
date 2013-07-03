@@ -1,0 +1,83 @@
+{
+    "raw": {
+        "publisher": [
+            "Frontiers"
+        ], 
+        "journal_abbrev": [
+            "Front. Neurosci."
+        ], 
+        "online_date": [
+            "2013/04/30"
+        ], 
+        "author": [
+            "Hans P. Op de Beeck", 
+            "Ben Vermaercke", 
+            "Daniel G. Woolley", 
+            "Nicole Wenderoth"
+        ], 
+        "language": [
+            "English"
+        ], 
+        "title": [
+            "Combinatorial brain decoding of people\u2019s whereabouts during visuospatial navigation"
+        ], 
+        "issn": [
+            "1662-453X"
+        ], 
+        "fulltext_html_url": [
+            "http://www.frontiersin.org/Brain_Imaging_Methods/10.3389/fnins.2013.00078/full"
+        ], 
+        "volume": [
+            "7"
+        ], 
+        "pdf_url": [
+            "http://www.frontiersin.org/Journal/DownloadFile/1/8175/50049/1/21/fnins-07-00078_pdf"
+        ], 
+        "doi": [
+            "10.3389/fnins.2013.00078"
+        ], 
+        "journal_title": [
+            "Frontiers in Neuroscience"
+        ], 
+        "publication_date": [
+            "2013/05/20"
+        ], 
+        "pages": [
+            "78"
+        ]
+    }, 
+    "pub": "frontiers", 
+    "csl": {
+        "DOI": "10.3389/fnins.2013.00078", 
+        "author": [
+            {
+                "given": "Hans P. Op", 
+                "family": "de Beeck"
+            }, 
+            {
+                "given": "Ben", 
+                "family": "Vermaercke"
+            }, 
+            {
+                "given": "Daniel G.", 
+                "family": "Woolley"
+            }, 
+            {
+                "given": "Nicole", 
+                "family": "Wenderoth"
+            }
+        ], 
+        "container-title-short": "Front. Neurosci.", 
+        "issued": {
+            "date-parts": [
+                2013, 
+                5, 
+                20
+            ]
+        }, 
+        "title": "Combinatorial brain decoding of people\u2019s whereabouts during visuospatial navigation", 
+        "volume": "7", 
+        "container-title": "Frontiers in Neuroscience", 
+        "issn": "1662-453X"
+    }
+}

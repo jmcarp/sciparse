@@ -1,0 +1,30 @@
+{
+    "raw": "<div class=\"References\">\n<p class=\"ReferencesCopy1\"><a name=\"B4\" id=\"B4\"></a> Crick, F., Koch, C., Kreiman, G., and Fried, I. (2004). Consciousness and neurosurgery. <i>Neurosurgery</i> 55, 273\u2013281. discussion: 281\u2013272.</p>\n<p class=\"ReferencesCopy2\"><a href=\"http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&amp;Cmd=ShowDetailView&amp;TermToSearch=15271233\" target=\"_blank\">Pubmed Abstract</a> | <a href=\"http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?db=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=15271233\" target=\"_blank\">Pubmed Full Text</a> | <a href=\"http://dx.doi.org/10.1227/01.NEU.0000129279.26534.76\" target=\"_blank\">CrossRef Full Text</a></p></div>", 
+    "pub": "frontiers", 
+    "csl": {
+        "DOI": "10.1227/01.NEU.0000129279.26534.76", 
+        "title": "Consciousness and neurosurgery.", 
+        "container-title-short": "Neurosurgery", 
+        "issued": [
+            2004
+        ], 
+        "author": [
+            {
+                "given": "F.", 
+                "family": "Crick"
+            }, 
+            {
+                "given": "C.", 
+                "family": "Koch"
+            }, 
+            {
+                "given": "G.", 
+                "family": "Kreiman"
+            }, 
+            {
+                "suffix": "I"
+            }
+        ], 
+        "PMID": "15271233"
+    }
+}

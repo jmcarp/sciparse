@@ -1,0 +1,31 @@
+{
+    "raw": "<div class=\"References\">\n<p class=\"ReferencesCopy1\"><a name=\"B2\" id=\"B2\"></a> Chadwick, M. J., Hassabis, D., Weiskopf, N., and Maguire, E. A. (2010). Decoding individual episodic memory traces in the human hippocampus. <i>Curr. Biol</i>. 20, 544\u2013547.</p>\n<p class=\"ReferencesCopy2\"><a href=\"http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&amp;Cmd=ShowDetailView&amp;TermToSearch=20226665\" target=\"_blank\">Pubmed Abstract</a> | <a href=\"http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?db=pubmed&amp;cmd=prlinks&amp;retmode=ref&amp;id=20226665\" target=\"_blank\">Pubmed Full Text</a> | <a href=\"http://dx.doi.org/10.1016/j.cub.2010.01.053\" target=\"_blank\">CrossRef Full Text</a></p></div>", 
+    "pub": "frontiers", 
+    "csl": {
+        "DOI": "10.1016/j.cub.2010.01.053", 
+        "title": "Decoding individual episodic memory traces in the human hippocampus.", 
+        "container-title-short": "Curr. Biol", 
+        "issued": [
+            2010
+        ], 
+        "author": [
+            {
+                "given": "M. J.", 
+                "family": "Chadwick"
+            }, 
+            {
+                "given": "D.", 
+                "family": "Hassabis"
+            }, 
+            {
+                "given": "N.", 
+                "family": "Weiskopf"
+            }, 
+            {
+                "given": "E. A.", 
+                "family": "and Maguire"
+            }
+        ], 
+        "PMID": "20226665"
+    }
+}

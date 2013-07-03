@@ -1,0 +1,27 @@
+{
+    "raw": "<li><span class=\"label\">6.\n              </span><a name=\"pone.0065784-Marras1\" id=\"pone.0065784-Marras1\"></a>Marras S, Batty RS, Domenici P (2012) Information transfer and antipredator maneuvers in schooling herring. Adaptive Behavior 20: 44\u201356.\n        doi:\n        <a href=\"http://dx.doi.org/10.1177/1059712311426799\">10.1177/1059712311426799</a>.\n       <ul class=\"find\" data-citedarticleid=\"7957469\" data-doi=\"10.1177/1059712311426799\"><li><a href=\"http://dx.doi.org/10.1177/1059712311426799\" onclick=\"window.open(this.href, 'ambraFindArticle', ''); return false;\" title=\"Go to article in CrossRef\">\n                            CrossRef\n                          </a></li><li><a href=\"http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Marras%5Bauthor%5D+AND+Information+transfer+and+antipredator+maneuvers+in+schooling+herring\" onclick=\"window.open(this.href, 'ambraFindArticle', ''); return false;\" title=\"Go to article in PubMed\">\n                            PubMed/NCBI\n                          </a></li><li><a href=\"http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=author%3AMarras+%22Information+transfer+and+antipredator+maneuvers+in+schooling+herring%22\" onclick=\"window.open(this.href, 'ambraFindArticle', ''); return false;\" title=\"Go to article in Google Scholar\">\n                            Google Scholar\n                          </a></li></ul></li><meta name=\"citation_reference\" content=\"citation_title=Information transfer and antipredator maneuvers in schooling herring; citation_volume=20; citation_number=6; citation_pages=44-56; citation_date=2012; \">", 
+    "pub": "plos", 
+    "csl": {
+        "DOI": "10.1177/1059712311426799", 
+        "author": [
+            {
+                "given": "S.", 
+                "family": "Marras"
+            }, 
+            {
+                "given": "R. S.", 
+                "family": "Batty"
+            }, 
+            {
+                "given": "P.", 
+                "family": "Domenici"
+            }
+        ], 
+        "issued": [
+            2012
+        ], 
+        "title": "Information transfer and antipredator maneuvers in schooling herring", 
+        "volume": "20", 
+        "pages": "44-56"
+    }
+}

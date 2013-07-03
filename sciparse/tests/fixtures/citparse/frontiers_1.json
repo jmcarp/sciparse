@@ -1,0 +1,73 @@
+{
+    "raw": {
+        "publisher": [
+            "Frontiers"
+        ], 
+        "journal_abbrev": [
+            "Front. Plant Sci."
+        ], 
+        "online_date": [
+            "2013/05/14"
+        ], 
+        "author": [
+            "Ivano Brunner", 
+            "Christoph Sperisen"
+        ], 
+        "language": [
+            "English"
+        ], 
+        "title": [
+            "Aluminum exclusion and aluminum tolerance in woody plants"
+        ], 
+        "issn": [
+            "1664-462X"
+        ], 
+        "fulltext_html_url": [
+            "http://www.frontiersin.org/Functional_Plant_Ecology/10.3389/fpls.2013.00172/full"
+        ], 
+        "volume": [
+            "4"
+        ], 
+        "pdf_url": [
+            "http://www.frontiersin.org/Journal/DownloadFile/1/6041/48443/1/21/fpls-04-00172_pdf"
+        ], 
+        "doi": [
+            "10.3389/fpls.2013.00172"
+        ], 
+        "journal_title": [
+            "Frontiers in Plant Science"
+        ], 
+        "publication_date": [
+            "2013/06/12"
+        ], 
+        "pages": [
+            "172"
+        ]
+    }, 
+    "pub": "frontiers", 
+    "csl": {
+        "DOI": "10.3389/fpls.2013.00172", 
+        "author": [
+            {
+                "given": "Ivano", 
+                "family": "Brunner"
+            }, 
+            {
+                "given": "Christoph", 
+                "family": "Sperisen"
+            }
+        ], 
+        "container-title-short": "Front. Plant Sci.", 
+        "issued": {
+            "date-parts": [
+                2013, 
+                6, 
+                12
+            ]
+        }, 
+        "title": "Aluminum exclusion and aluminum tolerance in woody plants", 
+        "volume": "4", 
+        "container-title": "Frontiers in Plant Science", 
+        "issn": "1664-462X"
+    }
+}

@@ -1,0 +1,12 @@
+beautifulsoup4==4.2.0
+cssselect==0.8
+datadiff==1.1.5
+lxml==3.2.1
+nameparser==0.2.7
+pyparsing==1.5.7
+pyquery==1.2.4
+python-dateutil==1.5
+reppy==0.2.2
+requests==1.2.3
+url==0.1.0
+wsgiref==0.1.2

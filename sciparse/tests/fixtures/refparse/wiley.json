@@ -1,0 +1,30 @@
+{
+    "raw": "<li id=\"bib5\"><cite id=\"cit5\">  <span class=\"author\">Baas D</span>, <span class=\"author\">Aleman A</span>, <span class=\"author\">Kahn RS</span> ( <span class=\"pubYear\">2004</span>): <span class=\"articleTitle\">Lateralization of amygdala activation: A systematic review of functional neuroimaging studies</span>. <span class=\"journalTitle\">Brain Res Brain Res Rev</span>  <span class=\"vol\">45</span>: <span class=\"pageFirst\">96</span>\u2013<span class=\"pageLast\">103</span>.</cite><ul class=\"externalReferences\"><li><a href=\"/resolve/reference/XREF?id=10.1016/j.brainresrev.2004.02.004\" shape=\"rect\">CrossRef</a>,</li><li><a href=\"/resolve/reference/PMED?id=15145620\" shape=\"rect\">PubMed</a>,</li><li><a href=\"/resolve/reference/ISI?id=000222306800002\" shape=\"rect\">Web of Science\u00ae Times Cited: 133</a></li></ul></li>", 
+    "pub": "wiley", 
+    "csl": {
+        "DOI": "10.1016/j.brainresrev.2004.02.004", 
+        "title": "Lateralization of amygdala activation: A systematic review of functional neuroimaging studies", 
+        "container-title-short": "Brain Res Brain Res Rev", 
+        "issued": [
+            2004
+        ], 
+        "author": [
+            {
+                "given": "D.", 
+                "family": "Baas"
+            }, 
+            {
+                "given": "A.", 
+                "family": "Aleman"
+            }, 
+            {
+                "given": "R. S.", 
+                "family": "Kahn"
+            }
+        ], 
+        "volume": "45", 
+        "ISI": "000222306800002", 
+        "PMID": "15145620", 
+        "pages": "96-103"
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "raw": {
+        "author_institution": [
+            "IAMC-CNR, Localit\u00e0 Sa Mardini, Torregrande, Oristano, Italy", 
+            "IAMC-CNR, Localit\u00e0 Sa Mardini, Torregrande, Oristano, Italy"
+        ], 
+        "publisher": [
+            "Public Library of Science"
+        ], 
+        "journal_title": [
+            "PLOS ONE"
+        ], 
+        "doi": [
+            "10.1371/journal.pone.0065784"
+        ], 
+        "author": [
+            "Stefano Marras", 
+            "Paolo Domenici"
+        ], 
+        "title": [
+            "Schooling Fish Under Attack Are Not All Equal: Some Lead, Others Follow"
+        ], 
+        "journal_abbrev": [
+            "PLoS ONE"
+        ], 
+        "firstpage": [
+            "e65784"
+        ], 
+        "volume": [
+            "8"
+        ], 
+        "pdf_url": [
+            "http://dx.plos.org/10.1371/journal.pone.0065784.pdf"
+        ], 
+        "date": [
+            "2013/6/12"
+        ], 
+        "issue": [
+            "6"
+        ], 
+        "issn": [
+            "1932-6203"
+        ]
+    }, 
+    "pub": "plos", 
+    "csl": {
+        "DOI": "10.1371/journal.pone.0065784", 
+        "title": "Schooling Fish Under Attack Are Not All Equal: Some Lead, Others Follow", 
+        "container-title-short": "PLoS ONE", 
+        "issued": {
+            "date-parts": [
+                2013, 
+                6, 
+                12
+            ]
+        }, 
+        "author": [
+            {
+                "given": "Stefano", 
+                "family": "Marras"
+            }, 
+            {
+                "given": "Paolo", 
+                "family": "Domenici"
+            }
+        ], 
+        "volume": "8", 
+        "container-title": "PLOS ONE", 
+        "issue": "6", 
+        "page": "e65784"
+    }
+}

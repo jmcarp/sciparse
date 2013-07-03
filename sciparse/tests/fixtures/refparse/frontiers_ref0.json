@@ -1,0 +1,16 @@
+{
+    "raw": "<div class=\"References\" style=\"margin-bottom:0.5em;\">\n<p class=\"ReferencesCopy1\"><a name=\"B1\" id=\"B1\"></a> Andersen, P. (2007). <i>The Hippocampus Book</i>. Oxford; New York: Oxford University Press.</p></div>", 
+    "pub": "frontiers", 
+    "csl": {
+        "container-title-short": "The Hippocampus Book", 
+        "issued": [
+            2007
+        ], 
+        "author": [
+            {
+                "given": "P.", 
+                "family": "Andersen"
+            }
+        ]
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "raw": {
+        "author_institution": [
+            "Department of Experimental Psychology, University of Oxford, Oxford, UK", 
+            "Department of Experimental Psychology, University of Oxford, Oxford, UK"
+        ], 
+        "publisher": [
+            "Blackwell Publishing Inc"
+        ], 
+        "doi": [
+            "10.1111/j.1469-8986.2009.00970.x"
+        ], 
+        "abstract_html_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2009.00970.x/abstract"
+        ], 
+        "language": [
+            "en"
+        ], 
+        "journal_title": [
+            "Psychophysiology"
+        ], 
+        "title": [
+            "Measurement of mismatch negativity in individuals: A study using single\u2010trial analysis"
+        ], 
+        "author": [
+            "Bishop, D. V. M.", 
+            "Hardiman, M. J."
+        ], 
+        "firstpage": [
+            "697"
+        ], 
+        "volume": [
+            "47"
+        ], 
+        "lastpage": [
+            "705"
+        ], 
+        "pdf_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2009.00970.x/pdf"
+        ], 
+        "keywords": [
+            "Mismatch negativity", 
+            "Single\u2010trial analysis", 
+            "Reliability", 
+            "Time\u2010frequency analysis"
+        ], 
+        "publication_date": [
+            "2010/07/01"
+        ], 
+        "issue": [
+            "4"
+        ], 
+        "fulltext_html_url": [
+            "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2009.00970.x/full"
+        ], 
+        "online_date": [
+            "2010/02/22"
+        ], 
+        "issn": [
+            "1469-8986"
+        ]
+    }, 
+    "pub": "wiley", 
+    "csl": {
+        "volume": "47", 
+        "DOI": "10.1111/j.1469-8986.2009.00970.x", 
+        "container-title": "Psychophysiology", 
+        "title": "Measurement of mismatch negativity in individuals: A study using single\u2010trial analysis", 
+        "issued": {
+            "date-parts": [
+                2010, 
+                7, 
+                1
+            ]
+        }, 
+        "author": [
+            {
+                "given": "D. V. M.", 
+                "family": "Bishop"
+            }, 
+            {
+                "given": "M. J.", 
+                "family": "Hardiman"
+            }
+        ], 
+        "issn": "1469-8986", 
+        "issue": "4"
+    }
+}
