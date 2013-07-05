@@ -13,6 +13,7 @@ from util import htmltools
 
 @magic.regify
 class RefParse(parse.Parse):
+    """ Base class for reference parsers. """
     
     def __init__(self, html, qhtml=None, **kwargs):
         
