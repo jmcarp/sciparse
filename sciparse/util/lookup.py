@@ -12,6 +12,10 @@ class LookupRule(object):
         self.field = field
         self.fun = fun
 
+    def __repr__(self):
+        
+        return 'LookupRule({0})'.format(self.field)
+
 class LookupFetch(object):
     
     # Abstract class
