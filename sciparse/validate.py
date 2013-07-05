@@ -5,44 +5,47 @@
 from util import magic
 from util import jsontools
 
-class ValidationError(Exception): pass
-
 def check_fields(dict, fields):
-    
+    """ Check that fields are in dictionary; raise AttributeError
+    if any fields missing.
+
+    :param dict: Dictionary to check
+    :param fields: Fields that should be in dict
+
+    """
+    # Loop over fields
     for field in fields:
         if field not in dict or \
                 not dict[field]:
-            return False
-    return True
+            raise AttributeError('Missing field: {0}'.format(field))
 
 @magic.regify
 class Validate(object):
     
+    # Required fields
     required = [
         'url',
         'publisher',
-        'ip_addr',
-        'head_ref',
-        'cited_refs',
+        'citation',
+        'references',
         'meta',
     ]
 
     def __init__(self, data):
         """ Initialize and store data to be validated.
 
-        Args:
-            data : JSON-formatted object or JSON-formatted string
+        :param data: JSON-formatted object or string
 
         """
+        # Ensure that input is JSON
         self.data = jsontools.to_json(data)
 
     def validate(self):
+        """ Validate data. """
         
         # Check for required fields
-        if not check_fields(self.data, self.required):
-            raise ValidationError
+        check_fields(self.data, self.required)
 
         # Check for required fields
-        if hasattr(self, 'required_head'):
-            if not check_fields(self.data['head_ref'], self.required_head):
-                raise ValidationError
+        if hasattr(self, 'citation_required'):
+            check_fields(self.data['citation'], self.citation_required)
