@@ -10,7 +10,7 @@ from ... import validate
 
 class PLOS(validate.Validate):
 
-    required_head = [
+    citation_required = [
         'title',
         'journal_title',
         'author',
