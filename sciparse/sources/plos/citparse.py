@@ -19,6 +19,8 @@ class PLoS(citparse.CitParse):
         ),
         'page' : LR('firstpage'),
     })
+    
+    fpage_key = 'firstpage'
 
     def _parse_author(self):
         """ Extract authors from citation. """
