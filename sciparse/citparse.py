@@ -7,6 +7,7 @@ import json
 # Project imports
 import parse
 from util import misc
+from util import page
 from util import magic
 from util import lookup
 from util import jsontools
@@ -41,3 +42,14 @@ class CitParse(parse.Parse):
     
     # Fetch class for lookups
     fetch = lookup.DictFetch
+    
+    fpage_key = None
+    lpage_key = None
+    def _parse_pages(self):
+        """ Extract page range. """
+        
+        return page.fetch_pages(
+            self, 
+            self.fpage_key,
+            self.lpage_key
+        )
