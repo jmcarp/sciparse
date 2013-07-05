@@ -12,6 +12,10 @@ def fetch_pages(parser, frst, last=None):
     :param last: Fetch selector for last page
 
     """
+    # Quit if no page keys given
+    if frst is None and last is None:
+        return
+
     # Fetch page values
     pages = parser\
         .fetch(parser.source)\
