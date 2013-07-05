@@ -12,6 +12,8 @@ from sources.plos import citparse as _
 from sources.frontiers import citparse as _
 from sources.nature import citparse as _
 from sources.pubmed import citparse as _
+from sources.tandf import citparse as _
+from sources.thieme import citparse as _
 
 # Import base class
 from refparse import RefParse
@@ -23,6 +25,8 @@ from sources.plos import refparse as _
 from sources.frontiers import refparse as _
 from sources.nature import refparse as _
 from sources.pubmed import refparse as _
+from sources.tandf import refparse as _
+from sources.thieme import refparse as _
 
 # Import base class
 from validate import Validate
