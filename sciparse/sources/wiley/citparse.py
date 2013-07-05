@@ -19,6 +19,9 @@ class Wiley(citparse.CitParse):
         ),
     })
     
+    fpage_key = 'firstpage'
+    lpage_key = 'lastpage'
+
     def _parse_author(self):
         """ Extract authors from citation. """
         
