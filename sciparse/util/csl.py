@@ -2,8 +2,32 @@
 """
 
 # Imports
-from dateutil.parser import parse as dateparse
+import re
 import datetime
+from dateutil.parser import parse as dateparse
+
+def clean_year(year):
+    """Clean up year string and output to CSL format.
+
+    :param year: Year string
+
+    Examples
+    >>> clean_year('2012a')
+    [2012]
+    >>> clean_year('2012')
+    [2012]
+    >>> clean_year('a long time ago')
+
+    """
+    # Delete non-digit characters
+    year = re.sub('\D', '', year, flags=re.I)
+    
+    # Ensure four digits
+    if len(year) != 4:
+        return
+    
+    # Convert to int and wrap in list
+    return [int(year)]
 
 def date_to_csl(date):
     """Convert a date (either a string or datetime.date object)
