@@ -18,6 +18,9 @@ class Highwire(citparse.CitParse):
             lambda date: csl.date_to_csl(date)
         ),
     })
+    
+    fpage_key = 'firstpage'
+    lpage_key = 'lastpage'
 
     def _parse_author(self):
         

@@ -23,3 +23,5 @@ class Frontiers(citparse.CitParse):
         ),
         'page' : LR('firstpage'),
     })
+
+    fpage_key = 'pages'
