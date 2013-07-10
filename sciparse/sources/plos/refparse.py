@@ -137,10 +137,6 @@ class PLoS(refparse.RefParse):
             # Parse to CSL
             csl = name.human_to_csl(author)
             
-            ## Dotify given names if available
-            #if 'given' in csl:
-            #    csl['given'] = regex.dotify(csl['given'])
-            
             # Append to CSL list
             authors_csl.append(csl)
         
