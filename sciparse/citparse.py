@@ -21,7 +21,8 @@ class CitParse(parse.Parse):
         """ Initialize and store data. """
         self.source = jsontools.to_json(data)
     
-    # Lookup rules
+    # Generic lookup rules; to be added to or 
+    # over-written by subclasses
     lookups = {
         'title' : LR(
             'title',
@@ -42,14 +43,3 @@ class CitParse(parse.Parse):
     
     # Fetch class for lookups
     fetch = lookup.DictFetch
-    
-    fpage_key = None
-    lpage_key = None
-    def _parse_pages(self):
-        """ Extract page range. """
-        
-        return page.fetch_pages(
-            self, 
-            self.fpage_key,
-            self.lpage_key
-        )
