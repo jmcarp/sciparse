@@ -54,11 +54,15 @@ class Frontiers(refparse.RefParse):
 
         if pyear not in self.text:
             return
-
-        authors_raw = self.text\
-            .split(pyear)[0]\
-            .split('., ')
         
+        # Clean text
+        text = self.text
+        text = text.split(pyear)[0]
+        text = re.sub('\s*and\s*', ' ', text, flags=re.I)
+
+        # Split authors
+        authors_raw = text.split('., ')
+
         authors_csl = []
 
         for author_raw in authors_raw:
