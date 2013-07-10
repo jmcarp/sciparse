@@ -2,6 +2,7 @@
 """
 
 # Imports
+import re
 from nameparser import HumanName
 
 # Project imports
@@ -45,6 +46,9 @@ def human_to_csl(name):
     >>> csl = human_to_csl('Eisenhower, I')
     >>> csl == {'given' : 'I.', 'family' : 'Eisenhower'}
     True
+    >>> csl = human_to_csl('Eisenhower, V')
+    >>> csl == {'given' : 'V.', 'family' : 'Eisenhower'}
+    True
     """
     # Optionally convert to nameparser.HumanName
     if not isinstance(name, HumanName):
@@ -52,9 +56,9 @@ def human_to_csl(name):
     
     # Fix: nameparser treats HumanName('Eisenhower, I') as 
     # {first : 'Eisenhower', suffix : 'I'}
-    if name.suffix == 'I' and not name.last:
+    if re.search('^[IV]\.*$', name.suffix):
         name.last = name.first
-        name.first = 'I'
+        name.first = name.suffix
         name.suffix = ''
 
     # Initialize CSL data
