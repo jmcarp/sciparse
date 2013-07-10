@@ -13,7 +13,7 @@ import re
 doi = re.compile(r'\b(10[.][0-9]{4,}(?:[.][0-9]+)*/(?:(?!["&\'<>])\S)+)\b')
 
 # 
-year = re.compile(r'\(([12]\d{3})\)')
+year = re.compile(r'\(\s*([12]\d{3})\s*\)')
 
 #############
 # Functions #
