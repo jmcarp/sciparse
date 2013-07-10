@@ -8,6 +8,7 @@ from pyquery import PyQuery
 
 # Project imports
 from ... import refparse
+from ...util import name
 from ...util import page
 from ...util import regex
 from ...util import lookup
@@ -27,78 +28,35 @@ class Wiley(refparse.RefParse):
         'volume' : LR('span.vol'),
     }
     
-    def extract_author(self, author):
-        """Extract author information from an HTML snippet.
-        
-        Args:
-            author : HTML snippet string
-        Returns:
-            CSL-formatted dictionary of author info
-
-        """
-        author_regex = re.compile(r'''
-            (?P<family>[\w\'\s]+?)  # Family name
-            \s+                     # Whitespace
-            (?P<given>[A-Z]+)       # Given name
-            (?:                     # Begin non-capturing suffix
-                \,\s+               # Comma + whitespace
-                (?P<suffix>.+)      # Suffix
-            )?                      # End non-capturing suffix
-        ''', re.VERBOSE)
-        
-        # Search HTML snippet for author info
-        match = author_regex.search(author)
-
-        # Quit if no match
-        if match is None:
-            return
-        
-        # Extract values
-        groupdict = match.groupdict()
-
-        # Quit if no family name
-        if 'family' not in groupdict:
-            return
-        
-        # Get non-None values
-        author = {key : groupdict[key] for key in groupdict 
-            if groupdict[key]}
-
-        # Dotify given names if available
-        if 'given' in author:
-            author['given'] = regex.dotify(author['given'])
-
-        # Return parsed author
-        return author
-
     def _parse_author(self):
         
-        # Initialize parsed authors
-        parsed_authors = []
-        
-        # Get author HTML snippets
-        html_authors = self.source('span.author').map(
-            lambda: PyQuery(this).text()
-        )
-        
-        # Extract author info for each HTML snippet
-        for author in html_authors:
+        # Initialize formatted authors
+        csl_authors = []
 
-            fields = self.extract_author(author)
-            if fields:
-                parsed_authors.append(fields)
+        # Get author HTML snippets
+        authors = self.source('span.author')
         
-        # Return parsed authors
-        return parsed_authors
-    
-    def _parse_pages(self):
+        # Loop over authors
+        for author in authors:
             
-        # Extract page range
-        frst = self.source('span.pageFirst').text()
-        last = self.source('span.pageLast').text()
+            # Get author text
+            text = PyQuery(author).text()
+
+            # Insert comma before initials
+            # Else nameparser.HumanName will fail
+            text = re.sub(r'[A-Z]+\s*$', r',\g<0>', text)
+            
+            # Convert to CSL format
+            csl_author = name.human_to_csl(text)
+            
+            # Append to author list
+            csl_authors.append(csl_author)
         
-        # 
-        return page.page_to_csl(frst, last)
+        # Return formatted author
+        return csl_authors
+    
+    fpage_key = 'span.pageFirst'
+    lpage_key = 'span.pageLast'
 
     def _parse_DOI(self):
         """ Extract DOI from reference. """
