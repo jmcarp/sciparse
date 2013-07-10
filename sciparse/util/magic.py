@@ -31,7 +31,8 @@ def regify(klass):
                 return
 
             # Clean name
-            regname = name.lower()
+            regname = name.lower()\
+                .replace('_', '-')
 
             # Add class to registry
             self.registry[regname] = self
