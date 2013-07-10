@@ -1,4 +1,6 @@
 """
+Defines abstract base class for sciparse parsers. Subclassed
+by citparse.py and refparse.py.
 """
 
 # Imports
@@ -6,27 +8,33 @@ import re
 import inspect
 
 # Project imports
+from util import page
 from util import xref
 
 class Parse(object):
-    """
+    """Base class for sciparse parsers. Subclasses may define
+    lookups (dictionary mapping field names to lookup.LookupRule
+    instances), method-based parsers (e.g. _parse_author, 
+    _parse_title, etc.), and a fetch class (lookup.DictFetch
+    or lookup.HTMLFetch).
+
     """
     # Get citation meta-data from CrossRef
     ping_doi = False
 
     def parse(self):
-        """
+        """Run lookup- and method-based parsers, then optionally
+        ping DOI for additional reference information.
+
         """       
         # Initialize data
         self.data = {}
 
         # Extract data from lookup fields
         self.parse_lookup_fields()
-        #self.data.update(self.parse_lookup_fields())
         
         # Extract data from custom methods
         self.parse_method_fields()
-        #self.data.update(self.parse_method_fields())
         
         # Add data from DOI if available
         if self.ping_doi and 'DOI' in data:
@@ -37,11 +45,13 @@ class Parse(object):
         return self.data
     
     def parse_method_fields(self):
-        """
-        """
-        # Initialize fields
-        #data = {}
+        """Use parse methods to extract various fields
+        from article data. Method-based parsers are any
+        methods beginning with _parse\d*_. To control order
+        of method-based parsers, use names like 
+        _parse00_title and _parse01_author.
 
+        """
         # Get field methods
         methods = inspect.getmembers(self, predicate=inspect.ismethod)
         methods = [m for m in methods if m[0].startswith('_parse')]
@@ -68,11 +78,9 @@ class Parse(object):
                 if value:
                     self.data[field] = value
 
-        ## Return extracted fields
-        #return data
-
     def parse_lookup_fields(self):
-        """ 
+        """Parse simple lookup fields. Defined in self.lookups.
+
         """
         # Quit if no lookups or no fetch
         if not hasattr(self, 'lookups') or \
@@ -86,3 +94,15 @@ class Parse(object):
         
         # Add info to data
         self.data.update(info)
+    
+    # Generic page extraction
+    fpage_key = None
+    lpage_key = None
+    def _parse_pages(self):
+        """ Extract page range. """
+        
+        return page.fetch_pages(
+            self, 
+            self.fpage_key,
+            self.lpage_key
+        )
