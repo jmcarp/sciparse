@@ -19,6 +19,9 @@ def parse_html(html):
 
     # Parse HTML using PyQuery
     qhtml = PyQuery(html)
+
+    # Optionally convert from XHTML to HTML
+    qhtml = qhtml.xhtml_to_html()
     
     # Return results
     return html, qhtml
