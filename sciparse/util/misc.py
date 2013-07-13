@@ -59,6 +59,12 @@ def obj_or_first(thing):
     
     return get_singleton(thing, force=True)   
 
+def ensure_list(thing):
+    
+    if not isinstance(thing, list):
+        return [thing]
+    return thing
+
 def get_singleton(thing, force=False, uniq=False):
     """Extract 0th item from list if singleton, else 
     return input.
