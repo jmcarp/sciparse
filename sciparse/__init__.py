@@ -19,6 +19,7 @@ from sources.apa_ebsco import citparse as _
 from sources.sciencedirect import citparse as _
 from sources.mit import citparse as _
 from sources.springer import citparse as _
+from sources.hindawi import citparse as _
 
 # Import base class
 from refparse import RefParse
@@ -37,6 +38,7 @@ from sources.apa_ebsco import refparse as _
 from sources.sciencedirect import refparse as _
 from sources.mit import refparse as _
 from sources.springer import refparse as _
+from sources.hindawi import refparse as _
 
 # Import base class
 from validate import Validate
