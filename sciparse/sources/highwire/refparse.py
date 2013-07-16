@@ -7,6 +7,7 @@ from pyquery import PyQuery
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import page
 from ...util import regex
 from ...util import lookup
@@ -23,7 +24,7 @@ class Highwire(refparse.RefParse):
         'volume' : LR('span.cit-vol'),
         'issued' : LR(
             'span.cit-pub-date',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
     }
 
