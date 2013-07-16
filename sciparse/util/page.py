@@ -23,6 +23,10 @@ def fetch_pages(parser, frst, last=None):
             'frst' : LR(frst),
             'last' : LR(last),
         })
+
+    # Quit if no page info found
+    if not pages:
+        return
     
     # Convert to CSL format
     return page_to_csl(**pages)
