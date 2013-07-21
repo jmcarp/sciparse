@@ -8,6 +8,7 @@ from pyquery import PyQuery
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import name
 from ...util import page
 from ...util import regex
@@ -97,7 +98,7 @@ class _NatureV1(Nature):
         'container-title-short' : LR('span.source-title'),
         'issued' : LR(
             'span.year',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
         'volume' : LR('span.vol'),
     }

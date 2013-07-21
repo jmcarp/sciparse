@@ -8,6 +8,7 @@ from pyquery import PyQuery
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import name
 from ...util import page
 from ...util import regex
@@ -23,7 +24,7 @@ class Wiley(refparse.RefParse):
         'container-title-short' : LR('span.journalTitle'),
         'issued' : LR(
             'span.pubYear',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
         'volume' : LR('span.vol'),
     }

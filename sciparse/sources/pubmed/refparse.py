@@ -6,6 +6,7 @@ import re
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import regex
 from ...util import lookup
 from ...util import htmltools
@@ -20,7 +21,7 @@ class Pubmed(refparse.RefParse):
         'container-title-short' : LR('span.ref-journal'),
         'issued' : LR(
             'span.year',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
         'volume' : LR('span.ref-vol'),
     }

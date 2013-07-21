@@ -8,6 +8,7 @@ from pyquery import PyQuery
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import name
 from ...util import page
 from ...util import regex
@@ -25,7 +26,7 @@ class MIT(refparse.RefParse):
         ),
         'issued' : LR(
             'span.NLM_year',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
         'publisher' : LR('span.NLM_publisher-name'),
         'publisher-place' : LR('span.NLM_publisher-loc'),
