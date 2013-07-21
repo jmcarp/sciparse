@@ -71,7 +71,7 @@ def date_to_parts(date):
         # Parse date string
         try:
             date = dateparse(date)
-        except ValueError:
+        except:
             return
 
     # Extract date parts
