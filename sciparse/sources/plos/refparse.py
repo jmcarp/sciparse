@@ -7,6 +7,7 @@ import re
 
 # Project imports
 from ... import refparse
+from ...util import csl
 from ...util import name
 from ...util import regex
 from ...util import lookup
@@ -33,7 +34,7 @@ class PLoS(refparse.RefParse):
         'volume' : LR('volume'),
         'issued' : LR(
             'date',
-            lambda year: [int(year)]
+            lambda year: csl.clean_year(year)
         ),
     }
     
